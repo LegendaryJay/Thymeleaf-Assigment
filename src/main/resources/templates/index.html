@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Want to draw an Owl?</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h2>
+    Do you want to know how to draw an owl?
+</h2>
+<p>
+Please say yes.
+<form th:action="@{/step1}">
+    <input type="submit" value="Yes"/>
+</form>
+</p>
+<img th:src="@{/img/real-owl.jpg}" alt="Real Owl">
+
+<br>
+<br>
+<p>I found the owl picture <a href="https://twitter.com/gkelly17/status/1204463632370802690">Here</a></p>
+<p>I found the owl drawing <a href="https://knowyourmeme.com/photos/572078-how-to-draw-an-owl">Here</a> </p>
+<p>I found the pencil img <a href="https://www.walmart.com/ip/Drawing-Pencils-14pcs-set-12B-10B-8B-7B-6B-5B-4B-3B-2B-B-HB-2H-4H-6H-Graphite-Sketching-Pencils-Professional-Sketch-Pencils-Set-for-Drawing/150196610">Here</a></p>
+<div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>How to draw an owl</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div th:insert="fragments/_header :: header"></div>
+<h2>
+Step 2
+</h2>
+<p>
+    Draw two circles with the pencil
+<form th:action="@{/step3}">
+    <input type="submit" value="Next Step"/>
+</form>
+</p>
+<img th:src="@{/img/owl1.jpg}" alt="Owl Circles">
+<div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>
